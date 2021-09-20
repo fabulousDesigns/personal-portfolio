@@ -1,0 +1,48 @@
+@media only screen and (max-width: 420px) {
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand {
+        padding: 2%;
+        margin: 0%;
+    }
+    #site-main {
+        text-align: center;
+    }
+    #site-main #Banner .container .row {
+        padding-top: 0;
+    }
+    #site-main #about .about-image>img {
+        margin-left: 0px;
+    }
+    #site-main #resume .education .underline {
+        display: block;
+        margin: 0 auto;
+    }
+    #site-main #resume .experience .underline {
+        display: block;
+        margin: 0 auto;
+    }
+    #site-main #resume .skills .underline {
+        display: block;
+        margin: 0 auto;
+    }
+    #site-main #subscribe-us-area .subscribe form .input-textbox input {
+        width: 20rem;
+        margin: 6%;
+    }
+    #site-main #subscribe-us-area .subscribe form .btn-submit button {
+        margin: 3%;
+    }
+}
+
+@media only screen and (width: 768px) {
+    #site-main #Banner .container .row {
+        padding-top: 0%;
+    }
+    #site-main #Banner .container .row .text-area h2 {
+        letter-spacing: 0.5px;
+        font-size: 40px;
+    }
+    #site-main #about .about-image>img {
+        margin-left: 7px;
+    }
+}
