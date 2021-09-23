@@ -5,10 +5,7 @@ body {
     scroll-behavior: smooth !important;
 }
 
-
-/* style navigation */
-
-.navbar_fixed {
+.navbar {
     position: fixed;
     width: 100%;
     top: -1px;
@@ -17,11 +14,12 @@ body {
     background: #ffffff;
     box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
     z-index: 999;
-    transition: background 1s ease;
-}
-
-.navbar-brand {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
 }
 
 .navbar .navbar-brand {
@@ -32,14 +30,12 @@ body {
 }
 
 .navbar .navbar-nav .nav-item {
-    margin-right: 52px;
     letter-spacing: 1px;
 }
 
 .navbar .navbar-nav .nav-item a {
     color: rgb(12, 1, 22);
     text-transform: capitalize;
-    letter-spacing: 3px;
     font-weight: 500;
 }
 
@@ -52,37 +48,35 @@ body {
 /*End Navigation*/
 
 
-/*style main section*/
-
-
 /*Banner section*/
 
-#site-main #Banner {
+#Banner {
     margin-top: 100px;
+    margin-bottom: 0px;
 }
 
-#site-main #Banner .container .row {
+#Banner .container .row {
     padding-top: 5%;
 }
 
-#site-main #Banner .container .row .text-area h3 {
+#Banner .container .row .text-area h3 {
     font-family: cursive;
     font-weight: 400;
     font-size: 40px;
 }
 
-#site-main #Banner .container .row .text-area h2 {
+#Banner .container .row .text-area h2 {
     font-family: cursive;
     letter-spacing: 1px;
 }
 
-#site-main #Banner .container .row .text-area p {
+#Banner .container .row .text-area p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
     text-shadow: #ccc solid 1px;
 }
 
-#site-main #Banner .banner-image>img {
+#Banner .banner-image>img {
     padding: 7rem 0;
     width: 90rem;
 }
@@ -91,18 +85,22 @@ body {
 /*end banner section*/
 
 
-/*About me section*/
+/* about */
 
-#site-main #about {
-    padding: 4rem 3rem;
+#user-info .about {
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
 
-#site-main #about .h-about {
+#user-info .about h3 {
     font-family: cursive;
-    padding: 8px;
 }
 
-#site-main #about .h-about-underline {
+#user-info .about h1 {
+    font-family: cursive;
+}
+
+#user-info .about .h-about-underline {
     display: block;
     margin: 0 auto;
     width: 80px;
@@ -110,12 +108,8 @@ body {
     background-color: #C4313180;
 }
 
-#site-main #about .about-image>img {
-    margin-top: 25px;
-    margin-left: 36px;
-    width: 400px;
+#user-info .about .profile-img {
     height: 400px;
-    object-fit: cover;
     border-radius: 54% 46% 62% 38% / 20% 24% 76% 80%;
     -webkit-border-radius: 54% 46% 62% 38% / 20% 24% 76% 80%;
     -moz-border-radius: 54% 46% 62% 38% / 20% 24% 76% 80%;
@@ -123,375 +117,45 @@ body {
     -o-border-radius: 54% 46% 62% 38% / 20% 24% 76% 80%;
 }
 
-#site-main .bout h2>span {
-    display: block;
-    font-family: cursive;
-    font-weight: 700;
-    letter-spacing: 13px;
-}
 
-#site-main .bout p {
-    padding: 2rem 0;
-}
+/* style skills */
 
-
-/*End About me section*/
-
-
-/*start resume section*/
-
-#site-main #resume {
-    padding: 4rem 3rem;
-}
-
-
-/*Education*/
-
-#site-main #resume .education h5 {
+#user-info .about .skills-bar p {
+    margin-bottom: 6px;
     font-weight: 600;
 }
 
-#site-main #resume .education .underline {
-    width: 80px;
-    height: 3px;
-    background-color: #C4313180;
+#user-info .about .skills-bar .progress {
+    margin-bottom: 10px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
-#site-main #resume .education h3 {
-    font-size: 27px;
-    font-weight: 600;
-}
-
-#site-main #resume .education .info {
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    color: #000;
-    opacity: 0.6;
-}
-
-
-/*End Education*/
-
-
-/*Experience*/
-
-#site-main #resume .experience h5 {
-    font-weight: 600;
-}
-
-#site-main #resume .experience .underline {
-    width: 80px;
-    height: 3px;
-    background-color: #C4313180;
-}
-
-#site-main #resume .experience h3 {
-    font-size: 27px;
-    font-weight: 600;
-}
-
-#site-main #resume .experience .info {
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    color: #000;
-    opacity: 0.6;
+#user-info .about .skills-bar .progress .progress-bar {
+    background: #000;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
 }
 
 
-/*End Experience*/
+/* End style skills */
 
 
-/*skills area*/
+/* style social icons */
 
-#site-main #resume .skills .underline {
-    width: 80px;
-    height: 3px;
-    background-color: #C4313180;
-}
-
-.bars {
-    width: 95%;
-    float: left;
-    padding: 0;
-    text-align: left;
-}
-
-.bars .skills {
-    margin-top: 36px;
-    list-style: none;
-}
-
-.bars li {
-    position: relative;
-    margin-bottom: 60px;
-    background: #ccc;
-    height: 42px;
-    border-radius: 3px;
-}
-
-.bars li em {
-    font: 15px 'opensans-bold', sans-serif;
-    color: #313131;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: normal;
-    position: relative;
-    top: -36px;
-}
-
-.bar-expand {
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    padding-right: 24px;
-    background: #313131;
-    display: inline-block;
-    height: 42px;
-    line-height: 42px;
-    border-radius: 3px 0 0 3px;
-}
-
-.javascript {
-    width: 55%;
-    animation: javascript 2s ease;
-    -moz-animation: javascript 2s ease;
-    -webkit-animation: javascript 2s ease;
-}
-
-.php {
-    width: 50%;
-    animation: php 2s ease;
-    -moz-animation: php 2s ease;
-    -webkit-animation: php 2s ease;
-}
-
-.css {
-    width: 90%;
-    animation: css 2s ease;
-    -moz-animation: css 2s ease;
-    -webkit-animation: css 2s ease;
-}
-
-.html5 {
-    width: 80%;
-    animation: html5 2s ease;
-    -moz-animation: html5 2s ease;
-    -webkit-animation: html5 2s ease;
-}
-
-.jquery {
-    width: 50%;
-    animation: jquery 2s ease;
-    -moz-animation: jquery 2s ease;
-    -webkit-animation: jquery 2s ease;
-}
-
-@keyframes javascript {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 60%;
-    }
-}
-
-@keyframes php {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-@keyframes css {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes html5 {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 80%;
-    }
-}
-
-@keyframes jquery {
-    0% {
-        width: 0px;
-    }
-    100% {
-        width: 50%;
-    }
-}
-
-
-/*end skills area*/
-
-
-/*end resume section*/
-
-
-/*Sevices Section*/
-
-#site-main #services-area {
-    padding: 7rem 2rem;
-}
-
-#site-main #services-area h1 {
-    font-family: cursive;
-    font-weight: 500;
-}
-
-#site-main #services-area .h-about-underline {
-    display: block;
-    margin: 0 auto;
-    width: 80px;
-    height: 3px;
-    background-color: #C4313180;
-}
-
-#site-main>#services-area .services {
-    background: rgba(248, 252, 253, 0.973);
-    padding: 2rem 0;
-    width: 16rem;
-    display: block;
-    margin: 5rem auto;
-    transition: box-shadow .3s ease;
-    -webkit-transition: box-shadow .3s ease;
-    -moz-transition: box-shadow .3s ease;
-    -ms-transition: box-shadow .3s ease;
-    -o-transition: box-shadow .3s ease;
-    cursor: pointer;
-}
-
-#site-main>#services-area .services:hover {
-    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.705);
-}
-
-
-/* End Services Area */
-
-
-/* start Testimonial Me */
-
-#site-main #testimonials .title-h1 {
-    font-family: cursive;
-}
-
-#site-main #testimonials .about-title p {
-    padding: 1rem 7rem;
-}
-
-#site-main #testimonials .client {
-    background: #ffffff10;
-    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-    margin: 3rem 0rem;
-}
-
-#site-main #testimonials .client .client-img {
-    padding: 2rem;
-}
-
-#site-main #testimonials .client .about-client {
-    padding-top: 2rem;
-}
-
-#site-main #testimonials .client .about-client h4 {
-    font: normal 500 21px/ 20px;
-}
-
-#site-main #testimonials .client .about-client p {
-    font-size: 14px;
-}
-
-#site-main #testimonials .owl-carousel .owl-item {
-    display: flex;
-    justify-content: center;
-    padding: 0 1.5rem;
-}
-
-#site-main #testimonials .owl-carousel .owl-dots .owl-dot.active span {
-    background: #4458dc;
-    width: 12px;
-    height: 12px;
-}
-
-
-/* End testimonial Me */
-
-
-/* Subscribe me */
-
-#site-main #subscribe-us-area .subscribe {
-    background: url(../img/subscribe-bg.png) no-repeat;
-    padding: 7rem 0;
-    margin: 3rem auto;
-}
-
-#site-main #subscribe-us-area .subscribe .subscribe-title h4 {
-    font: normal 700 30px/ 30px var(--roboto);
-    color: whitesmoke;
-}
-
-#site-main #subscribe-us-area .subscribe .subscribe-title p {
-    color: whitesmoke;
-    padding: 1rem 4rem;
-}
-
-#site-main #subscribe-us-area .subscribe form .input-textbox input {
-    width: 400px;
-    padding: 1.5rem 1rem;
-    border: 1px solid whitesmoke;
-    background: transparent;
-    color: white;
-    font: normal 500 17px/20px;
-}
-
-#site-main #subscribe-us-area .subscribe form .input-textbox input::placeholder {
-    color: whitesmoke;
-}
-
-#site-main #subscribe-us-area .subscribe form .btn-submit button {
-    background: whitesmoke;
-    color: #000;
-}
-
-
-/* End subscribe me */
-
-
-/*footer*/
-
-footer {
-    width: 100%;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
-    background-color: #ededed;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-footer .address {
-    display: block;
-}
-
-footer .social {
+.social {
     text-align: center;
     padding-bottom: 25px;
     color: #4b4c4d;
 }
 
-footer .social a {
+.social a {
     font-size: 24px;
     color: inherit;
     border: 1px solid #ccc;
@@ -509,9 +173,260 @@ footer .social a {
     opacity: 0.75;
 }
 
-footer .social a:hover {
+.social a:hover {
     opacity: 1;
 }
 
 
-/*End footer*/
+/* end social icons styles */
+
+
+/* End about */
+
+
+/* style resume */
+
+#user-info .resume {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #f9f9f9;
+}
+
+#user-info .resume h3 {
+    font-family: cursive;
+    margin-bottom: 50px;
+}
+
+#user-info .about .h-about-underline {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 3px;
+    background-color: #C4313180;
+}
+
+#user-info .resume .timeline {
+    list-style: none;
+    position: relative;
+}
+
+#user-info .resume .timeline:before {
+    content: "";
+    background: #555;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+}
+
+#user-info .resume .timeline li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #FFF;
+}
+
+#user-info .resume .timeline li:before {
+    content: "";
+    background: #FFF;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    left: 20px;
+    border: 3px solid #173E43;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#user-info .resume .timeline li h4 {
+    background-color: #173E43;
+    padding: 5px 0 5px 20px;
+    color: #FFF;
+}
+
+#user-info .resume .timeline li h4 span {
+    font-weight: bold;
+    color: #FFF;
+}
+
+
+/* End style resume */
+
+
+/*Sevices Section*/
+
+#user-info #services-area {
+    padding: 4rem 2rem;
+}
+
+#user-info #services-area h1 {
+    font-family: cursive;
+    font-weight: 500;
+}
+
+#user-info #services-area .h-about-underline {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 3px;
+    background-color: #C4313180;
+}
+
+#user-info>#services-area .services {
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    display: block;
+    margin: 0 auto;
+    transition: box-shadow .3s ease;
+    -webkit-transition: box-shadow .3s ease;
+    -moz-transition: box-shadow .3s ease;
+    -ms-transition: box-shadow .3s ease;
+    -o-transition: box-shadow .3s ease;
+    cursor: pointer;
+}
+
+#user-info>#services-area .services:hover {
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.705);
+}
+
+
+/* End Services Area */
+
+
+/* start Testimonial Me */
+
+#user-info #testimonials {
+    padding-top: 100px;
+}
+
+#user-info #testimonials .title-h1 {
+    font-family: cursive;
+}
+
+#user-info #testimonials .h-about-underline {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 3px;
+    background-color: #C4313180;
+}
+
+#user-info #testimonials .about-title p {
+    padding: 1rem 7rem;
+}
+
+#user-info #testimonials .client {
+    background: #ffffff10;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+    margin: 2rem 0rem;
+}
+
+#user-info #testimonials .client .client-img {
+    padding: 2rem;
+}
+
+#user-info #testimonials .client .about-client {
+    padding-top: 2rem;
+}
+
+#user-info #testimonials .client .about-client h4 {
+    font: normal 500 21px/ 20px;
+}
+
+#user-info #testimonials .client .about-client p {
+    font-size: 14px;
+}
+
+#user-info #testimonials .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+#user-info #testimonials .owl-carousel .owl-dots .owl-dot.active span {
+    background: #4458dc;
+    width: 12px;
+    height: 12px;
+}
+
+
+/* End testimonial Me */
+
+
+/* contact me */
+
+#user-info .contact {
+    padding-top: 50px;
+    background: #173E43;
+    color: #f9f9f9;
+}
+
+#user-info .contact .row {
+    color: #f9f9f9;
+    padding: 17px 0;
+    font-size: 22px;
+}
+
+#user-info .contact .row .col-md-4 .col-lg-4 .col-sm-12 i {
+    padding: 7px;
+    font-size: 40px;
+}
+
+#user-info .contact h1 {
+    font-family: cursive;
+}
+
+#user-info .contact .h-about-underline {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 3px;
+    background-color: #C4313180;
+}
+
+#user-info .contact .btn {
+    padding: 10px 25px 10px 25px;
+    margin: 5px;
+    border: 2px solid #FFF;
+    background-color: transparent !important;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    outline: hidden;
+}
+
+#user-info .contact .btn:focus {
+    box-shadow: none !important;
+}
+
+#user-info .contact .btn:hover {
+    border: 2px solid #000 !important;
+    background-color: blueviolet !important;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+#user-info .contact .btn i {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #173E43;
+    height: 50px;
+    margin-top: 50px;
+    color: #FFF;
+    padding-top: 10px;
+}
