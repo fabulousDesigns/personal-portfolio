@@ -5,181 +5,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FABULOUS | WEB DEVELOPER</title>
-    <!--  Bootstrap css file  -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Fabulous | Web-Developer</title>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <!--  owl carousel file  -->
     <link rel="stylesheet" href="owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="owl-carousel/css/owl.theme.default.min.css">
+    <!-- Bootstrap.min.js -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--  custom css file  -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Responsive css  -->
+    <!-- mediaQueries stylesheet -->
     <link rel="stylesheet" href="css/mediaQueries.css">
-
 </head>
 
 <body>
-    <!--  ======================= Header Start Here ============================== -->
-    <header class="header_area" id="head">
-        <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light navbar_fixed">
-                <a class="navbar-brand" href="#">FABULOUS&bull;DESIGNS</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon bg-light"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="mr-auto"></div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#head">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#resume">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services-area">services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#subscribe-us-area">contact</a>
-                        </li>
 
-                    </ul>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-uppercase ml-4" href="#">fabulousDesigns</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown p-2 mr-5">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown p-2 mr-5">
+                    <a class="nav-link" href="#user-info">About Me</a>
+                </li>
+                <li class="nav-item dropdown p-2 mr-5">
+                    <a class="nav-link" href="#resume">Resume </a>
+                </li>
+                <li class="nav-item dropdown p-2 mr-5">
+                    <a class="nav-link" href="#services-area">services</a>
+                </li>
+                <li class="nav-item dropdown p-2 mr-5">
+                    <a class="nav-link" href="#testimonials">testimonials</a>
+                </li>
+                <li class="nav-item dropdown p-2 mr-5">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
         </div>
-    </header>
-    <!--  ======================= Header Ends Here  ============================== -->
-    <!--  ======================= Main Area Strats here ================================ -->
-    <main id="site-main">
+    </nav>
+    <!--  ======================= Banner Area =======================  -->
+    <section id="Banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mt-5 pt-4 text-area">
+                    <h3 class="lead">HELLO</h3>
+                    <h2 class="display-3">I'm Bernard</h2>
+                    <p class="lead mb-3">A Freelance <strong>Web Developer</strong> with speciaty in <strong>back-End</strong> development,functionality, <strong>UI/UX</strong> Design, and <strong>Search engine Optimization</strong></p>
+                    <div class="btn-section d-flex flex-row flex-wrap">
+                        <button type="button" id="hireBtn" onclick()="()" class="btn btn-primary mt-2">HIRE ME</button>
+                        <a href="resume/resume.pdf" class="btn btn-outline-primary ml-4  mt-2">VIEW CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-4 banner-img">
+                    <img src="img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  ======================= End Banner Area =======================  -->
+
+    <!-- ===============PERSONAL INFORMATION=============== -->
+    <section id="user-info">
+        <div class="container about mt-4" id="about">
+            <h1 class="text-uppercase text-center title-h1">About Me</h1>
+            <div class="h-about-underline"></div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-md-12 text-center">
+                    <img src="../img/ben.jpg" alt="" class="image-fluid profile-img">
+                    <!-- social network -->
+                    <div class="social mt-4">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/benfabulous"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/benan.maish.9"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/fabulousDesigns/"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hazard-mburu-8ba3b318b"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="lead text-center">
+                        <b>Address :</b> <strong>32224-00100 Nairobi-kenya</strong> <br>
+                        <b>Tel:</b> <strong><i class="fas fa-phone"></i>+254110026199</strong> <br>
+                        <b>Email:</b><strong><i class="fas fa-envelop"></i>hazardmburu10@gmail.com</strong>
+                    </p>
+                    <!-- end social network -->
+                </div>
+                <div class="col-md-6 col-lg-6 col-md-12 text-center">
+                    <h3 class="text-uppercase">WHO AM I ?</h3>
+                    <p class="lead">I'm a freelance Web Developer with speciaty in back-End development,functionality,UX Design, and Search engine Optimization. I am outgoing, dedicated,and open-minded.I get across to people and adjust to changes easily.Its my belief
+                        that someone should work on developing their professional skills and learning new things all the time.</p>
+                    <!-- ================SKILLS============= -->
+                    <div class="skills-bar">
+                        <p class="lead text-left">HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;">80%</div>
+                        </div>
+                        <p class="lead text-left">CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;">90%</div>
+                        </div>
+                        <p class="lead text-left">JAVASCRIPT</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;">60%</div>
+                        </div>
+                        <p class="lead text-left">JQUERY</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 55%;">55%</div>
+                        </div>
+                        <p class="lead text-left">PHP</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                    <!-- ==============END SKILLS=========== -->
 
 
-        <!--  ======================= Banner Area =======================  -->
-        <section id="Banner">
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- ==============RESUME=========== -->
+        <div class="resume" id="resume">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 mt-5 pt-4 text-area">
-                        <h3 class="lead">HELLO</h3>
-                        <h2 class="display-3">I'm Bernard</h2>
-                        <p class="lead mb-3">A Freelance <strong>Web Developer</strong> with speciaty in <strong>back-End</strong> development,functionality, <strong>UI/UX</strong> Design, and <strong>Search engine Optimization</strong></p>
-                        <div class="btn-section d-flex flex-row flex-wrap">
-                            <a href="#subscribe-us-area"  class="btn btn-primary mt-2">HIRE ME</a>
-                            <a href="#"  class="btn btn-outline-primary ml-4  mt-2">GET CV</a>
-                        </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h3 class="text-center text-uppercase">experience</h3>
+                        <div class="h-about-underline"></div>
+                        <ul class="timeline">
+                            <li>
+                                <h4> <span> 2021 -</span>Network Engineer & UX Designer</h4>
+                                <p>Effectively managed the design and installation of all system networks. Tested, documented, and maintained all network components. Performed life cycle upgrades of network infrastructure. Researched and troubleshooted any
+                                    network performance issues and worked to resolve them immediately. Maintained an inventory of networking equipment and supplies. Worked as a thoughtful and cooperative team member. <br>
+                                    <b>Institution</b> - Pc kinyanjui Technical School <br>
+                                    <b>Duration</b> - 3 months [2021] <br>
+                                    <b>Region</b> - Nairobi - Kenya <br>
+
+                                </p>
+                            </li>
+                            <li>
+                                <h4> <span> 2021 -</span> Content & Article writter</h4>
+                                <p> My forte is creating engaging technical content for startups and IT service providers in English <br>
+                                    <a href="https://www.section.io/engineering-education/understanding-and-working-with-javascript-cookies/">article</a>
+                                    <br>
+                                    <b>company</b> - Section Engineering Education <br>
+                                    <b>Duration</b> - [2021] <br>
+                                    <b>Region</b> - Nairobi - Kenya <br>
+                                </p>
+                            </li>
+                            <li>
+                                <h4> <span> 2020 -</span> Front End Developer</h4>
+                                <p>Worked at this great company for two months and gained some exposure to front End development. <br>
+                                    <b>company</b> - Luiz Web Designs solutions ltd <br>
+                                    <b>Duration</b> - [2021] <br>
+                                    <b>company</b> - Nairobi - Kenya <br>
+
+                                </p>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-lg-6 col-md-12 mt-4 banner-img">
-                        <img src="img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h3 class="text-center text-uppercase">education</h3>
+                        <div class="h-about-underline"></div>
+                        <ul class="timeline">
+                            <li>
+                                <h4> B.s.D Computer Technology</h4>
+                                <p> My educational experience includes my undergraduate college degree- which contributes greatly to my development of skills such as SEO and Fullstack web development. The classes I take and projects I have completed are for
+                                    a Computer Science major- and they have imparted many of the concepts necessary to understanding good web development techniques. I also often work to complete presentations with classmates- and this helpe me hone my
+                                    ability to collaborate constructively. My educational background has prepared me well for a successful career path. I also plan to pursue further coursework in the future in order to keep learning and gain the qualifications
+                                    to advance in this field. <br>
+                                    <b>Institution</b> - Meru University <br>
+                                    <b>Duration</b> - 2019 - Present <br>
+                                </p>
+                            </li>
+                            <li>
+                                <h4> <span> June 2020 - Sep 2020</span> CCNA</h4>
+                                <p>Theory: understand how all the different protocols work that run on routers, switches and other network devices. Practical Experience: I was able to implement the theory by configuring routers, switches and other network
+                                    devices.
+                                </p> <br>
+                                <b>Institution</b> -CISCO Academy <br>
+                                <b>Duration</b> - 3 months [2021] <br>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--  ======================= End Banner Area =======================  -->
-        <!--  ========================= About Area ==========================  -->
-
-        <section id="about">
-            <div class="container-fluid">
-                <h1 class="text-uppercase text-center h-about">ABOUT</h1>
-                <div class="h-about-underline"></div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="about-image">
-                            <img src="img/ben.jpg" alt="About us" width="450px" height="250px" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 bout">
-                        <h2 class="text-uppercase pt-5">
-                            <span class="lead">Let me</span> <br>
-                            <span class="lead">introduce</span> <br>
-                            <span class="lead">myself</span>
-                        </h2>
-                        <p class="lead">
-                            I'm a freelance Web Developer with speciaty in back-End development,functionality,UX Design, and Search engine Optimization. I am outgoing, dedicated,and open-minded.I get across to people and adjust to changes easily.Its my belief that someone should
-                            work on developing their professional skills and learning new things all the time.
-                        </p>
-                        <button type="button" class="btn btn-primary text-uppercase">Download cv</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--  ========================= End About Area ==========================  -->
-        <!--  ====================== start Resume Area =============================  -->
-        <section id="resume">
-            <div class="container">
-                <div class="row education">
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <h5 class="text-uppercase p-3">education</h5>
-                        <div class="underline"></div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12">
-                        <h3 class="p-2">Meru University</h3>
-                        <p class="info lead">Bachelor's Degree in Computer Technology <span>&bull;</span> <em>September 2019 - Present</em></p>
-                        <p class="lead">
-                            My educational experience includes my undergraduate college degree- which contributes greatly to my development of skills such as SEO and Fullstack web development. The classes I take and projects I have completed are for a Computer Science major- and
-                            they have imparted many of the concepts necessary to understanding good web development techniques. I also often work to complete presentations with classmates- and this helpe me hone my ability to collaborate constructively.
-                            My educational background has prepared me well for a successful career path. I also plan to pursue further coursework in the future in order to keep learning and gain the qualifications to advance in this field.
-                        </p>
-                        <h3 class="p-2">CISCO Networking Academy</h3>
-                        <p class="info lead"> Certified Cisco Networking Associate<span>&bull;</span> <em>March 2020</em> </p>
-                        <p class="lead">
-                            Theory: understand how all the different protocols work that run on routers, switches and other network devices. Practical Experience: I was able to implement the theory by configuring routers, switches and other network devices.
-                        </p>
-                    </div>
-                </div>
-                <div class="row experience">
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <h5 class="text-uppercase p-3">experience</h5>
-                        <div class="underline"></div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12">
-                        <h3 class="p-2">Pc kinyanjui Technical School</h3>
-                        <p class="info lead">Network Engineer & UX Designer <span>&bull;</span> <em>September 2021 </em></p>
-                        <p class="lead">
-                            Effectively managed the design and installation of all system networks. Tested, documented, and maintained all network components. Performed life cycle upgrades of network infrastructure. Researched and troubleshooted any network performance issues and
-                            worked to resolve them immediately. Maintained an inventory of networking equipment and supplies. Worked as a thoughtful and cooperative team member.
-                        </p>
-                        <h3 class="p-2">Section Engineering Educaion</h3>
-                        <p class="info lead">Content & Article writter</p>
-                        <p class="lead">
-                            My forte is creating engaging technical content for startups and IT service providers in English <br>
-                            <a href="https://www.section.io/engineering-education/understanding-and-working-with-javascript-cookies/">article</a>
-
-                        </p>
-                    </div>
-                </div>
-                <div class="row skills pt-5">
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                        <h5 class="text-uppercase p-3">skills</h5>
-                        <div class="underline"></div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12">
-                        <p class="lead">
-                            check out some of my skills
-                        </p>
-                        <div class="bars">
-
-                            <ul class="skills">
-                                <li><span class="bar-expand javascript"></span><em>Javascript</em></li>
-                                <li><span class="bar-expand php"></span><em>PHP</em></li>
-                                <li><span class="bar-expand css"></span><em>CSS</em></li>
-                                <li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                                <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!--  ====================== end Resume Area =============================  -->
+        </div>
+        <!-- ==============END RESUME=========== -->
         <!--  ====================== start Services Area =============================  -->
         <section id="services-area">
             <div class="container">
@@ -260,6 +277,7 @@
                     <div class="col-12">
                         <div class="about-title">
                             <h1 class="text-uppercase title-h1">Client Say</h1>
+                            <div class="h-about-underline"></div>
                             <p class="lead">
                                 Below are some testimonials from some of my clients
                             </p>
@@ -268,7 +286,7 @@
                 </div>
             </div>
 
-            <div class="container carousel py-lg-5">
+            <div class="container carousel mt-4 py-lg-5">
                 <div class="owl-carousel owl-theme">
                     <div class="client row">
                         <div class="col-lg-4 col-md-12 client-img">
@@ -328,63 +346,56 @@
             </div>
         </section>
         <!--  ====================== End Testimonial Area =============================  -->
-        <!--  ========================== Subscribe me Area ============================  -->
-        <section id="subscribe-us-area">
-            <div class="container subscribe">
+        <!-- ==============contact=========== -->
+        <div class="contact" id="contact">
+            <div class="container text-center">
+                <h1 class="text-center">Contact Me</h1>
+                <p class="lead">Contact me </p>
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 text-center subscribe-title">
-                        <h4 class="text-uppercase">Get Update From anywhere</h4>
-                        <p class="para">Latest Portfolio, new designs and much more
-                        </p>
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <i class="fas fa-phone"></i>
+                        <p class="lead">+254110026199</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <i class="fas fa-envelope"></i>
+                        <p class="lead">hazardmburu10@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12">
+                        <i class="fab fa-internet-explorer"></i>
+                        <p class="lead">portfolio</p>
                     </div>
                 </div>
-                <div class="d-sm-flex justify-content-center">
-                    <form class="w-50">
-                        <div class="row d-flex flex-row flex-wrap">
-                            <div class="col input-textbox">
-                                <input type="text" id="txtemail" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="col">
-                                <div class="btn-submit">
-                                    <button type="submit" class="btn btn-success">Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <a href="resume/resume.pdf" class="btn btn-primary"><i class="fas fa-download"></i>Resume</a>
+                <a href="#" id="Btn" onclick()="()" class="btn btn-primary "><i class="fas fa-rocket "></i>Hire Me</a>
             </div>
-        </section>
-        <!--  ========================== End Subscribe me Area ============================  -->
-
-
-    </main>
-    <!--  ======================= Start End Main Area ================================ -->
-    <!--  ======================= footer Area ================================ -->
-    <div class="row pt-4">
-        <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
-            <footer class="mt-4">
-                <div class="social">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://github.com/fabulousDesigns/"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <p class="lead text-muted text-center copyright">32224-00100 Nairobi-kenya <strong>    <i class="fas fa-phone"></i> tel:+254110026199</strong> <br> &copy; 2021</p>
-            </footer>
+            <div class="footer text-center ">
+                <p class="lead text-white ">made with ❤ by fabulousDesigns</p>
+            </div>
         </div>
-    </div>
-    <!--  ======================= End footer Area ================================ -->
+        <!-- ==============END contact=========== -->
 
 
-    <!--  Jquery js file  -->
-    <script src="./js/jquery.3.4.1.js"></script>
-    <!--  Bootstrap js file  -->
-    <script src="./js/bootstrap.min.js"></script>
+
+    </section>
+    <!-- ===============END PERSONAL INFORMATION=============== -->
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.3.4.1.js "></script>
+    <!-- bootstrap.min.js -->
+    <script src="js/bootstrap.min.js "></script>
     <!--  carousel js file -->
-    <script src="owl-carousel/js/owl.carousel.min.js"></script>
-    <!--   Main js file      -->
-    <script src="js/main.js"></script>
+    <script src="owl-carousel/js/owl.carousel.min.js "></script>
+    <!-- popper.min.js -->
+    <script src="js/popper.min.js "></script>
+    <!-- Main.js -->
+    <script src="js/main.js "></script>
+
 </body>
 
 </html>
